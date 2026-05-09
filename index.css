@@ -1,0 +1,491 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #00b894,
+    #00cec9
+  );
+
+  padding: 16px 7%;
+
+  color: white;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 999;
+
+  box-shadow:
+    0 4px 16px rgba(0,0,0,0.1);
+}
+
+.navbar h2 {
+  margin: 0;
+
+  font-size: 28px;
+
+  font-weight: bold;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+
+  color: white;
+
+  font-weight: bold;
+
+  padding: 10px 16px;
+
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.navbar input {
+  padding: 10px 14px;
+
+  border-radius: 12px;
+
+  border: none;
+
+  outline: none;
+
+  width: 220px;
+}
+
+/* ================= JUDUL ================= */
+
+.judul {
+  padding: 40px 7% 10px;
+
+  font-size: 40px;
+
+  font-weight: bold;
+
+  color: #1f2937;
+}
+
+/* ================= CONTAINER ================= */
+
+.container {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(240px, 1fr));
+
+  gap: 24px;
+
+  padding: 30px 7% 80px;
+}
+
+/* ================= CARD ================= */
+
+.card {
+  background: white;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform:
+    translateY(-8px);
+
+  box-shadow:
+    0 20px 35px rgba(0,0,0,0.12);
+}
+
+.card-img {
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 18px 18px 8px;
+
+  font-size: 18px;
+
+  color: #1f2937;
+}
+
+.card p {
+  padding: 0 18px 18px;
+
+  color: #f59e0b;
+
+  font-size: 18px;
+}
+
+/* ================= DETAIL ================= */
+
+.detail-page {
+  padding: 50px 7%;
+}
+
+.detail-page h2 {
+  font-size: 42px;
+
+  margin-bottom: 30px;
+
+  color: #1f2937;
+}
+
+.detail-page h3 {
+  margin-top: 30px;
+
+  margin-bottom: 16px;
+}
+
+.detail-page ul {
+  list-style: none;
+
+  padding: 0;
+}
+
+.detail-page li {
+  background: white;
+
+  margin-bottom: 12px;
+
+  padding: 16px;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ================= ADMIN LOGIN ================= */
+
+.admin-login-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00b894,
+      #00cec9
+    );
+
+  padding: 20px;
+}
+
+.admin-login-box {
+  width: 100%;
+  max-width: 420px;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.12);
+
+  text-align: center;
+}
+
+.admin-login-box h1 {
+  font-size: 38px;
+
+  margin-bottom: 10px;
+
+  color: #1f2937;
+}
+
+.admin-login-box p {
+  color: gray;
+
+  margin-bottom: 30px;
+}
+
+.admin-login-box input {
+  width: 100%;
+
+  padding: 14px;
+
+  margin-bottom: 16px;
+
+  border-radius: 14px;
+
+  border: 2px solid #e5e7eb;
+
+  font-size: 15px;
+
+  box-sizing: border-box;
+}
+
+.admin-login-box input:focus {
+  outline: none;
+
+  border-color: #00b894;
+}
+
+.admin-login-box button {
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #00b894;
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.admin-login-box button:hover {
+  background: #00997a;
+}
+
+.error {
+  display: block;
+
+  color: red;
+
+  margin-bottom: 14px;
+}
+
+/* ================= DASHBOARD ================= */
+
+.admin-dashboard {
+  min-height: 100vh;
+
+  padding: 40px 7%;
+
+  background: #f5f7fb;
+}
+
+.admin-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.admin-topbar h1 {
+  font-size: 42px;
+
+  margin-bottom: 8px;
+}
+
+.admin-topbar p {
+  color: gray;
+}
+
+.logout-btn {
+  border: none;
+
+  padding: 12px 24px;
+
+  border-radius: 14px;
+
+  background: #ef4444;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.admin-grid {
+  display: grid;
+
+  grid-template-columns: 350px 1fr;
+
+  gap: 30px;
+}
+
+.admin-form-card,
+.admin-list-card {
+  background: white;
+
+  border-radius: 28px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+}
+
+.admin-form-card h2,
+.admin-list-card h2 {
+  margin-bottom: 20px;
+}
+
+.admin-form-card input {
+  width: 100%;
+
+  padding: 14px;
+
+  margin-bottom: 16px;
+
+  border-radius: 14px;
+
+  border: 2px solid #e5e7eb;
+
+  box-sizing: border-box;
+}
+
+.admin-form-card button {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #00b894;
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.admin-drinks-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px,1fr));
+
+  gap: 20px;
+}
+
+.admin-drink-card {
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  background: white;
+
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.06);
+}
+
+.admin-drink-card img {
+  width: 100%;
+  height: 180px;
+
+  object-fit: cover;
+}
+
+.admin-drink-content {
+  padding: 18px;
+}
+
+.admin-drink-content h3 {
+  margin-bottom: 8px;
+}
+
+.admin-drink-content p {
+  color: gray;
+
+  margin-bottom: 16px;
+}
+
+.admin-actions {
+  display: flex;
+
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  flex: 1;
+
+  border: none;
+
+  padding: 10px;
+
+  border-radius: 12px;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #00b894;
+}
+
+.delete-btn {
+  background: #ef4444;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+
+    gap: 16px;
+  }
+
+  .navbar nav {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .navbar input {
+    width: 100%;
+    max-width: 300px;
+  }
+}
